@@ -1,4 +1,3 @@
-
 # 🔍 LLM Web Search with Streamlit
 
 This project integrates **LLMs (Ollama’s LLaMA 3.2)** with **web search, crawling, and vector databases** to provide detailed, context-based answers.  
@@ -27,5 +26,10 @@ The system fetches web results, filters and cleans content, stores it in a vecto
 ```bash
 git clone https://github.com/your-username/llm-web-search.git
 cd llm-web-search
+python -m venv venv
+source venv/bin/activate   # On Linux/Mac
+venv\Scripts\activate      # On Windows
+pip install -r requirements.txt
 
-
+ollama pull llama3.2:3b
+streamlit run app.py
